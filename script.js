@@ -1,5 +1,9 @@
 window.onload = function () {
-    document.getElementById('overlay').style.opacity = '0';
+    element = document.getElementById('overlay');
+    element.style.opacity = '0';
+    element.addEventListener('webkitTransitionEnd', function( event ) { 
+        element.style.display = 'none';
+   }, false );
 }
     
   
@@ -32,6 +36,9 @@ function scrollFunction() {
         contact.style.bottom = "-100%";
     } else {
         contact.style.bottom = "0";
+        contact.addEventListener('click', (e) => {
+            window.location.href = 'mailto:mail@deazine.com';
+        });
     }
 } 
 
