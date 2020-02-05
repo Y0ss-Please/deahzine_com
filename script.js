@@ -1,8 +1,7 @@
-///const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-///const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-document.addEventListener("DOMContentLoaded", function(){
+window.onload = function () {
     document.getElementById('overlay').style.opacity = '0';
-});
+}
+    
   
 function scrollFunction() {
     const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
