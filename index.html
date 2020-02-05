@@ -1,58 +1,240 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Scratchpad</title>
+        <title>Harken.</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="fonts.css">
         <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="thing.css">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://brave.com/download/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <div id="overlay"></div>
         <div id="wrapper">
+
             <div id="navbar">
-                <div id="logo"><div id="logo-top">DEAH</div><div id="logo-bottom">ZINE</div></div>
-                <div id="navbar-right"></div>
+                <div id="logo"><div id="logo-top">DEAH</div><div id="push-block"></div><div id="logo-bottom"><span id="dash">-</span>ZINE</div></div>
+                <div id="navbar-line"></div>
             </div>
             <div id="navbar-spacer">
-                <div id="herobox">
-                    <div class="boxbox"></div>
-                    <div class="boxbox"></div>
-                    <div class="boxbox"></div>
+            </div>
+
+            <div class="banner1-left">1/3 of life crisis</div>
+            <div class="banner1-right">Thirty is the new Twenty</div>
+            <br>
+            <div class="banner1-left">I have done nothing productive my whole life.</div>
+            <div class="block-right">Certainly not for lack of trying...</div>
+
+            <div style="height: 40vh"></div>
+
+            <div class="text-container">
+                <img id="flers" src="res/flers.png">
+                <div class="text-right">
+                    Well, at least I think that last one is true. From my perspective it feels like I'm trying.
+                    I'm 'doing my best' just like how my parents and my teachers and the television told me to do. The part
+                    they all neglected to clarify was what 'best' really meant.
+                </div>
+                <div class="text-right">
+                    Best seems to be situational. During a job 
+                    interview my best Spongebob Squarepants impersonation doesn't seem to get much consideration.
+                </div>
+                <div class="text-right">
+                    Best seems comparative. Nobody cares if you did your best when your best is worse than sombody elses average.
+                </div>
+                <div class="text-right">
                 </div>
             </div>
-            <div id="text-container">
-                <p>
-                    "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I 
-                    will give you a complete account of the system, and expound the actual teachings of the great explorer of the 
-                    truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it 
-                    is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are
-                    extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because
-                    it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great 
-                    pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
-                    some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that
-                    has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-                </p>
-                <p>
-                    "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I 
-                    will give you a complete account of the system, and expound the actual teachings of the great explorer of the 
-                    truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it 
-                    is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are
-                    extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because
-                    it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great 
-                    pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
-                    some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that
-                    has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-                </p>
+
+            <div style="height: 20vh"></div>
+            <div class="animated-hr">
+                <div class="bounce-hr">-</div><div class="bounce-hr">-</div>
+                <div class="bounce-hr">-</div><div class="bounce-hr">-</div>
+                <div class="bounce-hr">-</div><div class="bounce-hr">-</div>
+                <div class="bounce-hr">-</div>
             </div>
+            <div style="height: 20vh"></div>
+
+            <div class="banner2-left">Why do I feel poor?</div>
+            <div class="text-left">
+                I'm not really. I'm in debt less then my average countrymen. I'm not hungry. I own a house.
+            </div>
+            <div class="text-left">
+                Well sort of own. The bank owns a house and they let me live in it.
+            </div>
+            <div class="text-left">
+                I've already won the birth lottery by spawning into a first world country. The sorrow of have-not
+                should never touch my mind.
+            </div>
+            <div style="height: 40vh"></div>
+            <div class="ascii">            
+                 __       __                                                __                    __      __                                                        __                       ______                   __  __                             __  __ 
+                /  \     /  |                                              /  |                  /  |    /  |                                                      /  |                     /      \                 /  |/  |                           /  |/  |
+                $$  \   /$$ |  ______   _______    ______   __    __       $$/   _______        _$$ |_   $$ |____    ______          ______    ______    ______   _$$ |_           ______  /$$$$$$  |        ______  $$ |$$ |        ______   __     __ $$/ $$ |
+                $$$  \ /$$$ | /      \ /       \  /      \ /  |  /  |      /  | /       |      / $$   |  $$      \  /      \        /      \  /      \  /      \ / $$   |         /      \ $$ |_ $$/        /      \ $$ |$$ |       /      \ /  \   /  |/  |$$ |
+                $$$$  /$$$$ |/$$$$$$  |$$$$$$$  |/$$$$$$  |$$ |  $$ |      $$ |/$$$$$$$/       $$$$$$/   $$$$$$$  |/$$$$$$  |      /$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$/         /$$$$$$  |$$   |           $$$$$$  |$$ |$$ |      /$$$$$$  |$$  \ /$$/ $$ |$$ |
+                $$ $$ $$/$$ |$$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$ |      $$ |$$      \         $$ | __ $$ |  $$ |$$    $$ |      $$ |  $$/ $$ |  $$ |$$ |  $$ |  $$ | __       $$ |  $$ |$$$$/            /    $$ |$$ |$$ |      $$    $$ | $$  /$$/  $$ |$$ |
+                $$ |$$$/ $$ |$$ \__$$ |$$ |  $$ |$$$$$$$$/ $$ \__$$ |      $$ | $$$$$$  |        $$ |/  |$$ |  $$ |$$$$$$$$/       $$ |      $$ \__$$ |$$ \__$$ |  $$ |/  |      $$ \__$$ |$$ |            /$$$$$$$ |$$ |$$ |      $$$$$$$$/   $$ $$/   $$ |$$ |
+                $$ | $/  $$ |$$    $$/ $$ |  $$ |$$       |$$    $$ |      $$ |/     $$/         $$  $$/ $$ |  $$ |$$       |      $$ |      $$    $$/ $$    $$/   $$  $$/       $$    $$/ $$ |            $$    $$ |$$ |$$ |      $$       |   $$$/    $$ |$$ |
+                $$/      $$/  $$$$$$/  $$/   $$/  $$$$$$$/  $$$$$$$ |      $$/ $$$$$$$/           $$$$/  $$/   $$/  $$$$$$$/       $$/        $$$$$$/   $$$$$$/     $$$$/         $$$$$$/  $$/              $$$$$$$/ $$/ $$/        $$$$$$$/     $/     $$/ $$/ 
+                                                           /  \__$$ |                                                                                                                                                                                           
+                                                           $$    $$/                                                                                                                                                                                            
+                                                            $$$$$$/                                                                                                                                                                                             
+             </div>
+             <div class="ascii">            
+                __       __                                                __                    __      __                                                        __                       ______                   __  __                             __  __ 
+               /  \     /  |                                              /  |                  /  |    /  |                                                      /  |                     /      \                 /  |/  |                           /  |/  |
+               $$  \   /$$ |  ______   _______    ______   __    __       $$/   _______        _$$ |_   $$ |____    ______          ______    ______    ______   _$$ |_           ______  /$$$$$$  |        ______  $$ |$$ |        ______   __     __ $$/ $$ |
+               $$$  \ /$$$ | /      \ /       \  /      \ /  |  /  |      /  | /       |      / $$   |  $$      \  /      \        /      \  /      \  /      \ / $$   |         /      \ $$ |_ $$/        /      \ $$ |$$ |       /      \ /  \   /  |/  |$$ |
+               $$$$  /$$$$ |/$$$$$$  |$$$$$$$  |/$$$$$$  |$$ |  $$ |      $$ |/$$$$$$$/       $$$$$$/   $$$$$$$  |/$$$$$$  |      /$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$/         /$$$$$$  |$$   |           $$$$$$  |$$ |$$ |      /$$$$$$  |$$  \ /$$/ $$ |$$ |
+               $$ $$ $$/$$ |$$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$ |      $$ |$$      \         $$ | __ $$ |  $$ |$$    $$ |      $$ |  $$/ $$ |  $$ |$$ |  $$ |  $$ | __       $$ |  $$ |$$$$/            /    $$ |$$ |$$ |      $$    $$ | $$  /$$/  $$ |$$ |
+               $$ |$$$/ $$ |$$ \__$$ |$$ |  $$ |$$$$$$$$/ $$ \__$$ |      $$ | $$$$$$  |        $$ |/  |$$ |  $$ |$$$$$$$$/       $$ |      $$ \__$$ |$$ \__$$ |  $$ |/  |      $$ \__$$ |$$ |            /$$$$$$$ |$$ |$$ |      $$$$$$$$/   $$ $$/   $$ |$$ |
+               $$ | $/  $$ |$$    $$/ $$ |  $$ |$$       |$$    $$ |      $$ |/     $$/         $$  $$/ $$ |  $$ |$$       |      $$ |      $$    $$/ $$    $$/   $$  $$/       $$    $$/ $$ |            $$    $$ |$$ |$$ |      $$       |   $$$/    $$ |$$ |
+               $$/      $$/  $$$$$$/  $$/   $$/  $$$$$$$/  $$$$$$$ |      $$/ $$$$$$$/           $$$$/  $$/   $$/  $$$$$$$/       $$/        $$$$$$/   $$$$$$/     $$$$/         $$$$$$/  $$/              $$$$$$$/ $$/ $$/        $$$$$$$/     $/     $$/ $$/ 
+                                                          /  \__$$ |                                                                                                                                                                                           
+                                                          $$    $$/                                                                                                                                                                                            
+                                                           $$$$$$/                                                                                                                                                                                             
+            </div>
+            <div class="ascii invert">            
+                __       __                                                __                    __      __                                                        __                       ______                   __  __                             __  __ 
+               /  \     /  |                                              /  |                  /  |    /  |                                                      /  |                     /      \                 /  |/  |                           /  |/  |
+               $$  \   /$$ |  ______   _______    ______   __    __       $$/   _______        _$$ |_   $$ |____    ______          ______    ______    ______   _$$ |_           ______  /$$$$$$  |        ______  $$ |$$ |        ______   __     __ $$/ $$ |
+               $$$  \ /$$$ | /      \ /       \  /      \ /  |  /  |      /  | /       |      / $$   |  $$      \  /      \        /      \  /      \  /      \ / $$   |         /      \ $$ |_ $$/        /      \ $$ |$$ |       /      \ /  \   /  |/  |$$ |
+               $$$$  /$$$$ |/$$$$$$  |$$$$$$$  |/$$$$$$  |$$ |  $$ |      $$ |/$$$$$$$/       $$$$$$/   $$$$$$$  |/$$$$$$  |      /$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$/         /$$$$$$  |$$   |           $$$$$$  |$$ |$$ |      /$$$$$$  |$$  \ /$$/ $$ |$$ |
+               $$ $$ $$/$$ |$$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$ |      $$ |$$      \         $$ | __ $$ |  $$ |$$    $$ |      $$ |  $$/ $$ |  $$ |$$ |  $$ |  $$ | __       $$ |  $$ |$$$$/            /    $$ |$$ |$$ |      $$    $$ | $$  /$$/  $$ |$$ |
+               $$ |$$$/ $$ |$$ \__$$ |$$ |  $$ |$$$$$$$$/ $$ \__$$ |      $$ | $$$$$$  |        $$ |/  |$$ |  $$ |$$$$$$$$/       $$ |      $$ \__$$ |$$ \__$$ |  $$ |/  |      $$ \__$$ |$$ |            /$$$$$$$ |$$ |$$ |      $$$$$$$$/   $$ $$/   $$ |$$ |
+               $$ | $/  $$ |$$    $$/ $$ |  $$ |$$       |$$    $$ |      $$ |/     $$/         $$  $$/ $$ |  $$ |$$       |      $$ |      $$    $$/ $$    $$/   $$  $$/       $$    $$/ $$ |            $$    $$ |$$ |$$ |      $$       |   $$$/    $$ |$$ |
+               $$/      $$/  $$$$$$/  $$/   $$/  $$$$$$$/  $$$$$$$ |      $$/ $$$$$$$/           $$$$/  $$/   $$/  $$$$$$$/       $$/        $$$$$$/   $$$$$$/     $$$$/         $$$$$$/  $$/              $$$$$$$/ $$/ $$/        $$$$$$$/     $/     $$/ $$/ 
+                                                          /  \__$$ |                                                                                                                                                                                           
+                                                          $$    $$/                                                                                                                                                                                            
+                                                           $$$$$$/                                                                                                                                                                                             
+            </div>
+            <div class="ascii">            
+                __       __                                                __                    __      __                                                        __                       ______                   __  __                             __  __ 
+               /  \     /  |                                              /  |                  /  |    /  |                                                      /  |                     /      \                 /  |/  |                           /  |/  |
+               $$  \   /$$ |  ______   _______    ______   __    __       $$/   _______        _$$ |_   $$ |____    ______          ______    ______    ______   _$$ |_           ______  /$$$$$$  |        ______  $$ |$$ |        ______   __     __ $$/ $$ |
+               $$$  \ /$$$ | /      \ /       \  /      \ /  |  /  |      /  | /       |      / $$   |  $$      \  /      \        /      \  /      \  /      \ / $$   |         /      \ $$ |_ $$/        /      \ $$ |$$ |       /      \ /  \   /  |/  |$$ |
+               $$$$  /$$$$ |/$$$$$$  |$$$$$$$  |/$$$$$$  |$$ |  $$ |      $$ |/$$$$$$$/       $$$$$$/   $$$$$$$  |/$$$$$$  |      /$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$/         /$$$$$$  |$$   |           $$$$$$  |$$ |$$ |      /$$$$$$  |$$  \ /$$/ $$ |$$ |
+               $$ $$ $$/$$ |$$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$ |      $$ |$$      \         $$ | __ $$ |  $$ |$$    $$ |      $$ |  $$/ $$ |  $$ |$$ |  $$ |  $$ | __       $$ |  $$ |$$$$/            /    $$ |$$ |$$ |      $$    $$ | $$  /$$/  $$ |$$ |
+               $$ |$$$/ $$ |$$ \__$$ |$$ |  $$ |$$$$$$$$/ $$ \__$$ |      $$ | $$$$$$  |        $$ |/  |$$ |  $$ |$$$$$$$$/       $$ |      $$ \__$$ |$$ \__$$ |  $$ |/  |      $$ \__$$ |$$ |            /$$$$$$$ |$$ |$$ |      $$$$$$$$/   $$ $$/   $$ |$$ |
+               $$ | $/  $$ |$$    $$/ $$ |  $$ |$$       |$$    $$ |      $$ |/     $$/         $$  $$/ $$ |  $$ |$$       |      $$ |      $$    $$/ $$    $$/   $$  $$/       $$    $$/ $$ |            $$    $$ |$$ |$$ |      $$       |   $$$/    $$ |$$ |
+               $$/      $$/  $$$$$$/  $$/   $$/  $$$$$$$/  $$$$$$$ |      $$/ $$$$$$$/           $$$$/  $$/   $$/  $$$$$$$/       $$/        $$$$$$/   $$$$$$/     $$$$/         $$$$$$/  $$/              $$$$$$$/ $$/ $$/        $$$$$$$/     $/     $$/ $$/ 
+                                                          /  \__$$ |                                                                                                                                                                                           
+                                                          $$    $$/                                                                                                                                                                                            
+                                                           $$$$$$/                                                                                                                                                                                             
+            </div>
+            <div class="ascii">            
+                __       __                                                __                    __      __                                                        __                       ______                   __  __                             __  __ 
+               /  \     /  |                                              /  |                  /  |    /  |                                                      /  |                     /      \                 /  |/  |                           /  |/  |
+               $$  \   /$$ |  ______   _______    ______   __    __       $$/   _______        _$$ |_   $$ |____    ______          ______    ______    ______   _$$ |_           ______  /$$$$$$  |        ______  $$ |$$ |        ______   __     __ $$/ $$ |
+               $$$  \ /$$$ | /      \ /       \  /      \ /  |  /  |      /  | /       |      / $$   |  $$      \  /      \        /      \  /      \  /      \ / $$   |         /      \ $$ |_ $$/        /      \ $$ |$$ |       /      \ /  \   /  |/  |$$ |
+               $$$$  /$$$$ |/$$$$$$  |$$$$$$$  |/$$$$$$  |$$ |  $$ |      $$ |/$$$$$$$/       $$$$$$/   $$$$$$$  |/$$$$$$  |      /$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$/         /$$$$$$  |$$   |           $$$$$$  |$$ |$$ |      /$$$$$$  |$$  \ /$$/ $$ |$$ |
+               $$ $$ $$/$$ |$$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$ |      $$ |$$      \         $$ | __ $$ |  $$ |$$    $$ |      $$ |  $$/ $$ |  $$ |$$ |  $$ |  $$ | __       $$ |  $$ |$$$$/            /    $$ |$$ |$$ |      $$    $$ | $$  /$$/  $$ |$$ |
+               $$ |$$$/ $$ |$$ \__$$ |$$ |  $$ |$$$$$$$$/ $$ \__$$ |      $$ | $$$$$$  |        $$ |/  |$$ |  $$ |$$$$$$$$/       $$ |      $$ \__$$ |$$ \__$$ |  $$ |/  |      $$ \__$$ |$$ |            /$$$$$$$ |$$ |$$ |      $$$$$$$$/   $$ $$/   $$ |$$ |
+               $$ | $/  $$ |$$    $$/ $$ |  $$ |$$       |$$    $$ |      $$ |/     $$/         $$  $$/ $$ |  $$ |$$       |      $$ |      $$    $$/ $$    $$/   $$  $$/       $$    $$/ $$ |            $$    $$ |$$ |$$ |      $$       |   $$$/    $$ |$$ |
+               $$/      $$/  $$$$$$/  $$/   $$/  $$$$$$$/  $$$$$$$ |      $$/ $$$$$$$/           $$$$/  $$/   $$/  $$$$$$$/       $$/        $$$$$$/   $$$$$$/     $$$$/         $$$$$$/  $$/              $$$$$$$/ $$/ $$/        $$$$$$$/     $/     $$/ $$/ 
+                                                          /  \__$$ |                                                                                                                                                                                           
+                                                          $$    $$/                                                                                                                                                                                            
+                                                           $$$$$$/                                                                                                                                                                                             
+            </div>
+            <div class="ascii">            
+                __       __                                                __                    __      __                                                        __                       ______                   __  __                             __  __ 
+               /  \     /  |                                              /  |                  /  |    /  |                                                      /  |                     /      \                 /  |/  |                           /  |/  |
+               $$  \   /$$ |  ______   _______    ______   __    __       $$/   _______        _$$ |_   $$ |____    ______          ______    ______    ______   _$$ |_           ______  /$$$$$$  |        ______  $$ |$$ |        ______   __     __ $$/ $$ |
+               $$$  \ /$$$ | /      \ /       \  /      \ /  |  /  |      /  | /       |      / $$   |  $$      \  /      \        /      \  /      \  /      \ / $$   |         /      \ $$ |_ $$/        /      \ $$ |$$ |       /      \ /  \   /  |/  |$$ |
+               $$$$  /$$$$ |/$$$$$$  |$$$$$$$  |/$$$$$$  |$$ |  $$ |      $$ |/$$$$$$$/       $$$$$$/   $$$$$$$  |/$$$$$$  |      /$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$/         /$$$$$$  |$$   |           $$$$$$  |$$ |$$ |      /$$$$$$  |$$  \ /$$/ $$ |$$ |
+               $$ $$ $$/$$ |$$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$ |      $$ |$$      \         $$ | __ $$ |  $$ |$$    $$ |      $$ |  $$/ $$ |  $$ |$$ |  $$ |  $$ | __       $$ |  $$ |$$$$/            /    $$ |$$ |$$ |      $$    $$ | $$  /$$/  $$ |$$ |
+               $$ |$$$/ $$ |$$ \__$$ |$$ |  $$ |$$$$$$$$/ $$ \__$$ |      $$ | $$$$$$  |        $$ |/  |$$ |  $$ |$$$$$$$$/       $$ |      $$ \__$$ |$$ \__$$ |  $$ |/  |      $$ \__$$ |$$ |            /$$$$$$$ |$$ |$$ |      $$$$$$$$/   $$ $$/   $$ |$$ |
+               $$ | $/  $$ |$$    $$/ $$ |  $$ |$$       |$$    $$ |      $$ |/     $$/         $$  $$/ $$ |  $$ |$$       |      $$ |      $$    $$/ $$    $$/   $$  $$/       $$    $$/ $$ |            $$    $$ |$$ |$$ |      $$       |   $$$/    $$ |$$ |
+               $$/      $$/  $$$$$$/  $$/   $$/  $$$$$$$/  $$$$$$$ |      $$/ $$$$$$$/           $$$$/  $$/   $$/  $$$$$$$/       $$/        $$$$$$/   $$$$$$/     $$$$/         $$$$$$/  $$/              $$$$$$$/ $$/ $$/        $$$$$$$/     $/     $$/ $$/ 
+                                                          /  \__$$ |                                                                                                                                                                                           
+                                                          $$    $$/                                                                                                                                                                                            
+                                                           $$$$$$/                                                                                                                                                                                             
+            </div>
+            <div class="ascii">            
+                __       __                                                __                    __      __                                                        __                       ______                   __  __                             __  __ 
+               /  \     /  |                                              /  |                  /  |    /  |                                                      /  |                     /      \                 /  |/  |                           /  |/  |
+               $$  \   /$$ |  ______   _______    ______   __    __       $$/   _______        _$$ |_   $$ |____    ______          ______    ______    ______   _$$ |_           ______  /$$$$$$  |        ______  $$ |$$ |        ______   __     __ $$/ $$ |
+               $$$  \ /$$$ | /      \ /       \  /      \ /  |  /  |      /  | /       |      / $$   |  $$      \  /      \        /      \  /      \  /      \ / $$   |         /      \ $$ |_ $$/        /      \ $$ |$$ |       /      \ /  \   /  |/  |$$ |
+               $$$$  /$$$$ |/$$$$$$  |$$$$$$$  |/$$$$$$  |$$ |  $$ |      $$ |/$$$$$$$/       $$$$$$/   $$$$$$$  |/$$$$$$  |      /$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$/         /$$$$$$  |$$   |           $$$$$$  |$$ |$$ |      /$$$$$$  |$$  \ /$$/ $$ |$$ |
+               $$ $$ $$/$$ |$$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$ |      $$ |$$      \         $$ | __ $$ |  $$ |$$    $$ |      $$ |  $$/ $$ |  $$ |$$ |  $$ |  $$ | __       $$ |  $$ |$$$$/            /    $$ |$$ |$$ |      $$    $$ | $$  /$$/  $$ |$$ |
+               $$ |$$$/ $$ |$$ \__$$ |$$ |  $$ |$$$$$$$$/ $$ \__$$ |      $$ | $$$$$$  |        $$ |/  |$$ |  $$ |$$$$$$$$/       $$ |      $$ \__$$ |$$ \__$$ |  $$ |/  |      $$ \__$$ |$$ |            /$$$$$$$ |$$ |$$ |      $$$$$$$$/   $$ $$/   $$ |$$ |
+               $$ | $/  $$ |$$    $$/ $$ |  $$ |$$       |$$    $$ |      $$ |/     $$/         $$  $$/ $$ |  $$ |$$       |      $$ |      $$    $$/ $$    $$/   $$  $$/       $$    $$/ $$ |            $$    $$ |$$ |$$ |      $$       |   $$$/    $$ |$$ |
+               $$/      $$/  $$$$$$/  $$/   $$/  $$$$$$$/  $$$$$$$ |      $$/ $$$$$$$/           $$$$/  $$/   $$/  $$$$$$$/       $$/        $$$$$$/   $$$$$$/     $$$$/         $$$$$$/  $$/              $$$$$$$/ $$/ $$/        $$$$$$$/     $/     $$/ $$/ 
+                                                          /  \__$$ |                                                                                                                                                                                           
+                                                          $$    $$/                                                                                                                                                                                            
+                                                           $$$$$$/                                                                                                                                                                                             
+            </div>
+            <div class="ascii">            
+                __       __                                                __                    __      __                                                        __                       ______                   __  __                             __  __ 
+               /  \     /  |                                              /  |                  /  |    /  |                                                      /  |                     /      \                 /  |/  |                           /  |/  |
+               $$  \   /$$ |  ______   _______    ______   __    __       $$/   _______        _$$ |_   $$ |____    ______          ______    ______    ______   _$$ |_           ______  /$$$$$$  |        ______  $$ |$$ |        ______   __     __ $$/ $$ |
+               $$$  \ /$$$ | /      \ /       \  /      \ /  |  /  |      /  | /       |      / $$   |  $$      \  /      \        /      \  /      \  /      \ / $$   |         /      \ $$ |_ $$/        /      \ $$ |$$ |       /      \ /  \   /  |/  |$$ |
+               $$$$  /$$$$ |/$$$$$$  |$$$$$$$  |/$$$$$$  |$$ |  $$ |      $$ |/$$$$$$$/       $$$$$$/   $$$$$$$  |/$$$$$$  |      /$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$/         /$$$$$$  |$$   |           $$$$$$  |$$ |$$ |      /$$$$$$  |$$  \ /$$/ $$ |$$ |
+               $$ $$ $$/$$ |$$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$ |      $$ |$$      \         $$ | __ $$ |  $$ |$$    $$ |      $$ |  $$/ $$ |  $$ |$$ |  $$ |  $$ | __       $$ |  $$ |$$$$/            /    $$ |$$ |$$ |      $$    $$ | $$  /$$/  $$ |$$ |
+               $$ |$$$/ $$ |$$ \__$$ |$$ |  $$ |$$$$$$$$/ $$ \__$$ |      $$ | $$$$$$  |        $$ |/  |$$ |  $$ |$$$$$$$$/       $$ |      $$ \__$$ |$$ \__$$ |  $$ |/  |      $$ \__$$ |$$ |            /$$$$$$$ |$$ |$$ |      $$$$$$$$/   $$ $$/   $$ |$$ |
+               $$ | $/  $$ |$$    $$/ $$ |  $$ |$$       |$$    $$ |      $$ |/     $$/         $$  $$/ $$ |  $$ |$$       |      $$ |      $$    $$/ $$    $$/   $$  $$/       $$    $$/ $$ |            $$    $$ |$$ |$$ |      $$       |   $$$/    $$ |$$ |
+               $$/      $$/  $$$$$$/  $$/   $$/  $$$$$$$/  $$$$$$$ |      $$/ $$$$$$$/           $$$$/  $$/   $$/  $$$$$$$/       $$/        $$$$$$/   $$$$$$/     $$$$/         $$$$$$/  $$/              $$$$$$$/ $$/ $$/        $$$$$$$/     $/     $$/ $$/ 
+                                                          /  \__$$ |                                                                                                                                                                                           
+                                                          $$    $$/                                                                                                                                                                                            
+                                                           $$$$$$/                                                                                                                                                                                             
+            </div>
+            <div class="ascii">            
+                __       __                                                __                    __      __                                                        __                       ______                   __  __                             __  __ 
+               /  \     /  |                                              /  |                  /  |    /  |                                                      /  |                     /      \                 /  |/  |                           /  |/  |
+               $$  \   /$$ |  ______   _______    ______   __    __       $$/   _______        _$$ |_   $$ |____    ______          ______    ______    ______   _$$ |_           ______  /$$$$$$  |        ______  $$ |$$ |        ______   __     __ $$/ $$ |
+               $$$  \ /$$$ | /      \ /       \  /      \ /  |  /  |      /  | /       |      / $$   |  $$      \  /      \        /      \  /      \  /      \ / $$   |         /      \ $$ |_ $$/        /      \ $$ |$$ |       /      \ /  \   /  |/  |$$ |
+               $$$$  /$$$$ |/$$$$$$  |$$$$$$$  |/$$$$$$  |$$ |  $$ |      $$ |/$$$$$$$/       $$$$$$/   $$$$$$$  |/$$$$$$  |      /$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$/         /$$$$$$  |$$   |           $$$$$$  |$$ |$$ |      /$$$$$$  |$$  \ /$$/ $$ |$$ |
+               $$ $$ $$/$$ |$$ |  $$ |$$ |  $$ |$$    $$ |$$ |  $$ |      $$ |$$      \         $$ | __ $$ |  $$ |$$    $$ |      $$ |  $$/ $$ |  $$ |$$ |  $$ |  $$ | __       $$ |  $$ |$$$$/            /    $$ |$$ |$$ |      $$    $$ | $$  /$$/  $$ |$$ |
+               $$ |$$$/ $$ |$$ \__$$ |$$ |  $$ |$$$$$$$$/ $$ \__$$ |      $$ | $$$$$$  |        $$ |/  |$$ |  $$ |$$$$$$$$/       $$ |      $$ \__$$ |$$ \__$$ |  $$ |/  |      $$ \__$$ |$$ |            /$$$$$$$ |$$ |$$ |      $$$$$$$$/   $$ $$/   $$ |$$ |
+               $$ | $/  $$ |$$    $$/ $$ |  $$ |$$       |$$    $$ |      $$ |/     $$/         $$  $$/ $$ |  $$ |$$       |      $$ |      $$    $$/ $$    $$/   $$  $$/       $$    $$/ $$ |            $$    $$ |$$ |$$ |      $$       |   $$$/    $$ |$$ |
+               $$/      $$/  $$$$$$/  $$/   $$/  $$$$$$$/  $$$$$$$ |      $$/ $$$$$$$/           $$$$/  $$/   $$/  $$$$$$$/       $$/        $$$$$$/   $$$$$$/     $$$$/         $$$$$$/  $$/              $$$$$$$/ $$/ $$/        $$$$$$$/     $/     $$/ $$/ 
+                                                          /  \__$$ |                                                                                                                                                                                           
+                                                          $$    $$/                                                                                                                                                                                            
+                                                           $$$$$$/                                                                                                                                                                                             
+            </div>
+            <div style="height: 40vh"></div>
+
+            <div class="banner1-left">Oh, sorry.</div>
+            <div class="banner1-right">That's not why you're here is it?</div>
+            <div class="banner2-left">-details about the deahzine-</div>
+            <div class="banner1-right">Right, I can give you those.</div>
+            <div style="height: 5vh"></div>
+
+            <div id="description-container">
+                <div id="description">
+                    <hr>
+                    <hr>
+                    The deahzine is a collection of random crap my friends and I made. 
+                    <hr>
+                    <hr>
+                    The entries are all anonymous because we don't care enough to attach a name to any of them.
+                    <hr>
+                    <hr>                   
+                    The deahzine is built using the cheapest paper I've been able to find.
+                    <hr>
+                    <hr>
+                    It's printed on an old home printer that's currently sitting on the floor of my kitchen because I don't have a desk for it.
+                    <hr>
+                    <hr>
+                    There's two staples.
+                    <hr>
+                    <hr>
+                </div>
+            </div>
+
+            <div style="height: 5vh"></div>
+
+            <div class="banner1-right">All further inquiries can be made to my dog.</div>
+            <div class="banner1-right">You can contact her by clicking that thing on the bottom-left of your screen.</div>
+            <div style="height: 5vh"></div>
+            <div class="banner2-left">Thanks.</div>
+
+            <div style="height: 150vh"></div>
+            <div class="banner2-right">There's nothing down here...</div>
+
+            <div id="contact">Contact</div>
         </div>
         <script src="script.js" async defer></script>
     </body>

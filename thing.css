@@ -1,0 +1,53 @@
+.thing-container{
+  height: 12vw;
+  width: 12vw;
+  position: fixed;
+  top: 93vh;
+  left: -5vw;
+
+}
+
+.square{
+  height: 80%;
+  width: 80%;
+  background: white;
+  position: absolute;
+  top: 54%;
+  left: 54%;
+  margin: -45% 0 0 -45%;
+}
+
+.black-l{ 
+  background: black;  
+  animation: rotate-l 11s infinite linear; 
+}
+
+.black-r{ 
+  background: black;  
+  animation: rotate-r 22s infinite linear; 
+}
+
+@keyframes rotate-l{
+  100%{ transform: rotate(0deg); }
+    0%{ transform: rotate(360deg); }  
+}
+
+@keyframes rotate-r{
+  0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }  
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    padding-right: 4px;
+}
+
+.footer-text {
+	font-family: "Lucida Console", Monaco, monospace;
+	text-align: right;
+	color: white;
+}
