@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'impact_labelregular';
+    src: url('./fonts/impact_label-webfont.woff2') format('woff2'),
+         url('./fonts/impact_label-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'blackoutmidnight';
+    src: url('./fonts/blackout-midnight-webfont.woff2') format('woff2'),
+         url('./fonts/blackout-midnight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'blackout2_am';
+    src: url('./fonts/blackout-2am-webfont.woff2') format('woff2'),
+         url('./fonts/blackout-2am-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
