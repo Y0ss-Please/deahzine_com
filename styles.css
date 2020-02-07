@@ -38,10 +38,11 @@ html, body {
 #modal-header {
   height: 100%;
   width: 100%;
-  background-image: url(./res/bikes.png);
-  background-position: 0 60%;
+  background-image: url(./res/contact_bg.png);
+  background-position: 0% 27%;
   background-size: 100%;
-  transition: 0.4s;
+  background-repeat: no-repeat;
+  transition: 0.6s;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -78,8 +79,49 @@ html, body {
 #modal-body {
   height: 0%;
   width: 100%;
+  display: flex;
+  align-items: center;
   background-color: #f3f2f1;
-  transition: 0.4s;
+  transition: 0.6s;
+  overflow: hidden;
+}
+
+#modal-body>h2 {
+  margin: 0;
+  padding: 0;
+  font-size: calc(18px + (42 - 18) * ((100vw - 300px) / (1600 - 300)));
+  margin: 0 auto;
+  font-family: 'impact_labelregular';
+  color: #3f3f3d;
+}
+
+#modal-body>form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#modal-body>form>h3 {
+  margin: 0;
+  padding: 0;
+  font-size: calc(18px + (42 - 18) * ((100vw - 300px) / (1600 - 300)));
+  margin: 1vh 1vh 1vh 1vh;
+  font-family: 'impact_labelregular';
+  color: #3f3f3d;
+}
+
+#submit-btn {
+  background-color: #3f3f3d;
+  color: #f3f2f1;
+}
+
+#modal-body>form>input, #modal-body>form>textarea {
+  margin: 0;
+  padding: 5px;
+  width: 90%;
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  margin: 1vh 1vh 1vh 1vh;
+  font-family: 'communistregular';
+  box-sizing: border-box;
 }
 
 #wrapper {

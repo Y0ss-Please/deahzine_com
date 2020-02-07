@@ -1,4 +1,5 @@
 document.getElementById('contact').addEventListener('click', (e) => contactBtnClick(e));
+document.getElementById('contact-form').addEventListener('submit', contactSubmit);
 
 window.onscroll = function() {scrollFunction()};
 window.onresize = function() {scrollFunction()};
@@ -84,17 +85,44 @@ function showContactModal() {
     body.style.height = '0%';
     overlay.removeEventListener('webkitTransitionEnd', changeHeaderSize);
     }
+}
 
-    /*
-    const showContainer = setInterval(showContainerAnim, 5);
-    let containerPos = -120;
-    function showContainerAnim() {
-        if (containerPos >= 0){
-            clearInterval(showContainer);
-        } else {
-            containerPos += (Math.cos(3.14*8) + 1) / 2;
-            container.style.transform = `translateY(${containerPos}%)`;
+let testVar = ''
+
+function contactSubmit(e) {
+    const sub = e.target[0].value;
+    const email = e.target[1].value;
+    const msg = e.target[2].value;
+
+    e.preventDefault();
+
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            mailResponse(this.responseText);
         }
+    };
+
+    xhttp.open("GET", `contact.php?sub=${sub}&email=${email}&msg=${msg}`, true);
+    xhttp.send();
+    mailSent();
+}
+
+function mailSent() {
+    const body = document.getElementById('modal-body');
+    body.innerHTML = '<h2>Sending...</h2>';
+
+}
+
+function mailResponse(res) {
+    const body = document.getElementById('modal-body');
+    console.log(res);
+    if (res == 'sent') {
+        body.innerHTML = '<h2>Sent!</h2>';
+        setTimeout(function(){
+            document.getElementById('close-modal').click();
+        }, 1000);
+    } else {
+        body.innerHTML = '<h2>Failed.</h2><p>Please try again, or send a message to mail@deahzine.com</p>'
     }
-    */
 }
