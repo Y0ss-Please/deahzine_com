@@ -1,9 +1,11 @@
+document.getElementById('contact').addEventListener('click', (e) => contactBtnClick(e));
+
+window.onscroll = function() {scrollFunction()};
+window.onresize = function() {scrollFunction()};
+
 window.onload = function () {
-    element = document.getElementById('overlay');
-    element.style.opacity = '0';
-    element.addEventListener('webkitTransitionEnd', function( event ) { 
-        element.style.display = 'none';
-   }, false );
+    scrollFunction();
+    hideOverlay();
 }
     
   
@@ -31,18 +33,68 @@ function scrollFunction() {
     if (atMinimum) newNavbarSize = minimumNavbarSize;
     document.getElementById('navbar').style.height = newNavbarSize+'px';
 
-    const contact = document.getElementById('contact');
-    if (scroll < 350){
-        contact.style.bottom = "-100%";
+    if (scroll < 300){
+        hideContactBtn();
     } else {
-        contact.style.bottom = "0";
-        contact.addEventListener('click', (e) => {
-            window.location.href = 'mailto:mail@deazine.com';
-        });
+        showContactBtn();
     }
 } 
 
-window.onscroll = function() {scrollFunction()};
-window.onresize = function() {scrollFunction()};
+function hideOverlay() {
+    const overlay = document.getElementById('overlay');
+    overlay.style.backgroundColor = 'rgb(63, 63, 61, 0)';
+    overlay.addEventListener('webkitTransitionEnd', function( event ) { 
+        overlay.style.display = 'none';
+   }, false );
+}
 
-scrollFunction();
+function showContactBtn(){
+    const contact = document.getElementById('contact');
+    contact.style.bottom = "0";
+}
+
+function hideContactBtn() {
+    const contact = document.getElementById('contact');
+    contact.style.bottom = "-100%";
+}
+
+function contactBtnClick(e) {
+    showContactModal();
+}
+
+function showContactModal() {
+    const overlay = document.getElementById('modal-overlay');
+    const container = document.getElementById('modal-container');
+    const header = document.getElementById('modal-header');
+    const body = document.getElementById('modal-body');
+
+    overlay.classList.remove('hide-modal');
+
+    overlay.addEventListener('webkitTransitionEnd', changeHeaderSize);
+   function changeHeaderSize() {
+        header.style.height = '15%';
+        body.style.height = '85%';
+   }
+
+   document.getElementById('close-modal').addEventListener('click', closeContactModal);
+
+   function closeContactModal() {
+    overlay.classList.add('hide-modal');
+    header.style.height = '100%';
+    body.style.height = '0%';
+    overlay.removeEventListener('webkitTransitionEnd', changeHeaderSize);
+    }
+
+    /*
+    const showContainer = setInterval(showContainerAnim, 5);
+    let containerPos = -120;
+    function showContainerAnim() {
+        if (containerPos >= 0){
+            clearInterval(showContainer);
+        } else {
+            containerPos += (Math.cos(3.14*8) + 1) / 2;
+            container.style.transform = `translateY(${containerPos}%)`;
+        }
+    }
+    */
+}

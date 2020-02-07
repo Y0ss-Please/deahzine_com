@@ -5,15 +5,81 @@ html, body {
 }
 
 #overlay {
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
   position: fixed;
-  top: -50%;
-  left: -50%;
-  background-color: #3f3f3d;
+  background-color: rgb(63, 63, 61, 1);
   opacity: 1;
-  transition: 1s;
-  z-index: 99;
+  transition: 2s;
+  z-index: 999;
+}
+
+.hide-modal {
+  transform: translateY(-120%);
+}
+
+#modal-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgb(63, 63, 61, 0.75);
+  z-index: 20;
+  transition: 0.4s;
+}
+
+#modal-container {
+  height: 90vh;
+  width: 90vw;
+  max-width: 700px;
+  margin: 5vh auto;
+  box-shadow: 1px 1px 9px black;
+}
+
+#modal-header {
+  height: 100%;
+  width: 100%;
+  background-image: url(./res/bikes.png);
+  background-position: 0 60%;
+  background-size: 100%;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  position: relative;
+}
+
+#modal-header>h1 {
+  font-family: 'blackoutmidnight';
+  font-size: calc(20px + (54 - 20) * ((100vw - 300px) / (1600 - 300)));
+  color: #f3f2f1;
+  padding:0 10px 0 10px;
+  margin: 0;
+  background-color: #3f3f3d;
+}
+
+#modal-header>h2 {
+  font-family: 'blackoutmidnight';
+  font-size: calc(20px + (54 - 20) * ((100vw - 300px) / (1600 - 300)));
+  color: #3f3f3d;
+  margin: 0;
+  padding:0 10px 0 10px;
+  background-color: #f3f2f1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#modal-header>h2:hover {
+  color: rgb(71, 71, 71);
+  scale: 1.05
+}
+
+
+#modal-body {
+  height: 0%;
+  width: 100%;
+  background-color: #f3f2f1;
+  transition: 0.4s;
 }
 
 #wrapper {
@@ -191,6 +257,10 @@ html, body {
 .ascii.invert {
   color: black;
   background-color: white;
+}
+
+.small {
+  font-size: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300)))
 }
 
 .animated-hr {
