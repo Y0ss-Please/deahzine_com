@@ -119,10 +119,21 @@ function mailResponse(res) {
     console.log(res);
     if (res == 'sent') {
         body.innerHTML = '<h2>Sent!</h2>';
-        setTimeout(function(){
+        setTimeout(() => {
             document.getElementById('close-modal').click();
+            setTimeout(()=> {
+                body.innerHTML = `<form id="contact-form">
+                            <h3>What you want?</h3>
+                            <input name="sub" type="text" required>
+                            <h3>Yer email.</h3>
+                            <input name="email" type="email" placeholder="Only needed if you expect a response.">
+                            <h3>Message:</h3>
+                            <textarea name="msg" placeholder="Put some of your words here." required></textarea>
+                            <input id="submit-btn" type="submit" value="send">
+                        </form>`;
+            }, 2000);
         }, 1000);
     } else {
-        body.innerHTML = '<h2>Failed.</h2><p>Please try again, or send a message to mail@deahzine.com</p>'
+        body.innerHTML = '<h2>Failed.</h2><p>Please refresh and try again, or send a message to mail@deahzine.com</p>'
     }
 }
